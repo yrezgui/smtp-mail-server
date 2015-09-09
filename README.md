@@ -67,3 +67,27 @@ QUIT
 You should see an email ID displayed in the server logs like `9a1266a7-c29a-48fb-90a4-bda4dca160bc`
 
 Open your browser with this URL: [http://localhost:3333/emails/9a1266a7-c29a-48fb-90a4-bda4dca160bc](http://localhost:3333/emails/9a1266a7-c29a-48fb-90a4-bda4dca160bc)
+
+## Docker commands
+
+### Build the docker image
+
+In the root directory, execute: 
+
+```
+docker build -t <image-name> .
+```
+
+### Run the container
+
+```
+docker run -d -p 25:25 -p 3333:3333 --name <container-name> <image-name>
+```
+
+### Get the followable logs
+
+```
+docker logs -f <container-name>
+```
+
+You should be able to access the app as usual (be sure to check `DOCKER_HOST` for Mac OS X users, in this case you'll have to access the `mailin` service this way: `telnet DOCKER_HOST 25`)
