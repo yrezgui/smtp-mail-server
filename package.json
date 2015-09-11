@@ -1,7 +1,7 @@
 {
-  "name": "vero-mail-test",
+  "name": "smtp-mail-server",
   "version": "1.0.0",
-  "description": "Mail test server for Vero.co",
+  "description": "SMTP Mail test server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,10 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ojingolabs/vero-mail-test.git"
+    "url": "git+https://github.com/yrezgui/smtp-mail-server.git"
   },
   "keywords": [
-    "vero",
     "mail",
     "test",
     "smtp"
@@ -21,9 +20,9 @@
   "author": "Yacine Rezgui <rezgui.y@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ojingolabs/vero-mail-test/issues"
+    "url": "https://github.com/yrezgui/smtp-mail-server/issues"
   },
-  "homepage": "https://github.com/ojingolabs/vero-mail-test#readme",
+  "homepage": "https://github.com/yrezgui/smtp-mail-server#readme",
   "private": true,
   "devDependencies": {
     "emailjs": "^0.3.16",
