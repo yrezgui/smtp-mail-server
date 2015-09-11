@@ -1,4 +1,4 @@
-# Vero Mail test server
+# SMTP Mail test server
 mail testing service using [mailin](http://mailin.io)
 
 
@@ -34,16 +34,16 @@ telnet localhost 25
 And copy past these commands in your terminal:
 
 ```
-EHLO mail.vero.co
+EHLO mail.simple.co
 
-MAIL FROM: <support@vero.co>
+MAIL FROM: <support@simple.co>
 
-RCPT TO: <support@vero.co>
+RCPT TO: <support@simple.co>
 
 DATA
 
-From: "Yacine Rezgui" <yrezgui@vero.co>
-To: "Robin Vivant" <rvivant@vero.co>
+From: "Yacine Rezgui" <yrezgui@simple.co>
+To: "Robin Vivant" <rvivant@simple.co>
 Subject: test message sent from manual telnet session
 Date: Wed, 11 May 2015 16:19:57 -0400
 
