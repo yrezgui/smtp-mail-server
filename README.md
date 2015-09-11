@@ -1,6 +1,7 @@
 # SMTP Mail test server
-mail testing service using [mailin](http://mailin.io)
+Mail testing service using [mailin](http://mailin.io).
 
+It helps to create temporary emails to test any sending of mails.
 
 ## Getting started
 If you don't have NVM installed:
