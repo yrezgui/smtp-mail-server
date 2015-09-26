@@ -4,7 +4,7 @@ import LRU from 'lru-cache';
 
 let app   = express();
 let cache = LRU({
-  max: 50,
+  max: 100,
   maxAge: 30 * 60 * 1000
 });
 
@@ -26,7 +26,7 @@ mailin.on('authorizeUser', function(connection, username, password, done) {
 });
 
 mailin.on('message', function (connection, data, content) {
-  cache.set(connection.id, data);
+  cache.set(connection.to.split("@")[0], data);
   console.log('EMAIL RECEIVED AND CACHED', connection.id);
 });
 
