@@ -26,8 +26,8 @@ mailin.on('authorizeUser', function(connection, username, password, done) {
 });
 
 mailin.on('message', function (connection, data, content) {
-  cache.set(connection.to.split("@")[0], data);
-  console.log('EMAIL RECEIVED AND CACHED', connection.id);
+  cache.set(connection.envelope.rcptTo[0].address.split("@")[0], data);
+  console.log('EMAIL RECEIVED AND CACHED', connection.envelope.rcptTo[0].address);
 });
 
 app.get('/check', (req, res, next) => {
